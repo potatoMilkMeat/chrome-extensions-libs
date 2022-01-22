@@ -10,10 +10,10 @@ chrome.runtime.onInstalled.addListener(()=>{
 chrome.contextMenus.create({
   title: "使用度娘搜索：%s",
   contexts: ['selection'],
-  onclick: function(params){
-    console.log('params', params)
+  onclick: function(info){
+    console.log('info', info)
     chrome.tabs.create({
-      url: 'https://www.baidu.com/s?ie=utf-8&wd='+ encodeURI(params.selectionText)
+      url: 'https://www.baidu.com/s?ie=utf-8&wd='+ encodeURI(info.selectionText)
     })
   }
 })
