@@ -1,0 +1,15 @@
+.usb-class{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 300px;
+  min-height: 100px;
+  background-color: #fff;
+  color: #555;
+  font-size: 13px;
+  box-shadow: -1px -1px 17px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.usb-class ul, .usb-class li{ padding: 0;margin: 0;overflow: hidden;}
+.usb-class li{border: 1px solid #f2f2f2;line-height: 19px;padding: 6px 12px;}
+.usb-class li::marker{display: none;}

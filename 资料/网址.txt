@@ -1,0 +1,21 @@
+入门 - Chrome 开发者
+https://developer.chrome.com/docs/extensions/mv3/getstarted/
+
+Extensions - Chrome Developers
+https://developer.chrome.com/docs/extensions/
+
+【干货】Chrome插件(扩展)开发全攻略 - 我是小茗同学 - 博客园
+https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html
+
+=====优点==============================================
+使用扩展能放开权限，和注入功能，通讯功能。
+
+=====不能用=================================================
+mdn 中   webUSB  webhid 没有发送和接受api，网页内部无法直接使用。
+谷歌浏览器扩展  刚好从 mv2 升级到 mv3, 以前的教程都是 mv2
+文档需要翻墙，增加难度。
+usb, hid  是需要 app 才能使用【mv2】，无法调用。
+
+第58篇USB获取数据 及PHP研究_二刀流的博客-CSDN博客  【扩展app- mv2】
+https://blog.csdn.net/SanBaDao/article/details/52740981?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164299469816781683921389%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=164299469816781683921389&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-9-52740981.nonecase&utm_term=USB%E5%BC%80%E5%8F%91&spm=1018.2226.3001.4450
+

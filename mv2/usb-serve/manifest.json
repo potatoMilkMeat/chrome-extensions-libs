@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "usb驱动+服务器",
+  "version": "0.0.1",
+  "description": "冠瑞usb设备驱动+信息交互",
+
+  "icons": {
+    "16": "icon-128.png",
+    "32": "icon-128.png",
+    "48": "icon-128.png",
+    "128": "icon-128.png"
+  },
+  "background": {
+    "scripts": ["bg-usb.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://localhost:*/*", "*://127.0.0.1:*/*"],
+    "js": ["cs-usb.js"],
+    "css": ["usb-class.css"],
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "storage",
+    "tabs",
+    "*://localhost:*/*",
+    "*://127.0.0.1:*/*"
+  ],
+  "externally_connectable": {
+    "matches": ["*://127.0.0.1:*/*", "*://localhost:*/*"]
+  }
+}
